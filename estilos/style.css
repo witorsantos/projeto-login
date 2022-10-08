@@ -1,138 +1,129 @@
 @charset "UTF-8";
 
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
-
-body, html{
+body, html {
+    background-image: linear-gradient(to top, #d419198a, #dd67ba94);
+    background-color: #5f2c82;
     height: 100vh;
-    width: 95vw;
-    background-color: none;
+    width: 100vw;
 }
-
-main{
+main {
     position: relative;
-    height: 99vh;
-    width: 95vw;
+    height: 100vh;
+    width: 100vw;
 }
-
-section#login{
-    margin: auto;
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
-    transition: width .4s, height .4s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
-
-div#imagem{
+section#login > div#imagem {
     display: block;
     background: url(../imagens/de\ coraçao\ detalhe\ logo.png) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 200px;
-    border-radius: 20px;
 }
-
-div#formulario{
+section#login > div#formulario {
     display: block;
-    padding: 20px;
-    margin: auto;
+    padding: 10px;
 }
-
-#titulo{
+div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-
-#conteudo{
-    font-size: .8em;
+div#formulario > p {
+    font-size: 0.8em;
+    margin: 10px 0px;
 }
 
-.campo{
-    background-color: slateblue;
+form > div.campo {
+    background-color: #dd67ba57;
+    border: 2px solid #dd67ba57;
     display: block;
     width: 100%;
     height: 40px;
-    border: 2px solid slateblue;
+    border-radius: 5px;
     border-radius: 8px;
     margin: 5px 0px;
 }
 
-div.campo label{
+div.campo > label {
     display: none;
 }
 
-div.campo input{
-    background-color: #dd67bad0;
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: transparent;
     font-size: 1em;
     width: calc(100% - 40px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    margin-left: -5px;
-    transform: translateY(-10px);
+    margin-left: 40px;
+    transform: translateY(-42px);
 }
 
-div.campo span{
-    color: white;
-    font-size: 2em;
-    width: 40px;
-    padding: 4px;
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
-form input[type=submit]{
+form > input[type=submit] {
     display: block;
     font-size: 1em;
-    width: 60%;
+    width: 100%;
     height: 40px;
-    align-items: center;
-    margin: auto;
     background-color: #dd67ba94;
     color: white;
     border: 2px solid #d419198a;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
-    margin-top: 15px;
 }
-
-form input[type=submit]:hover{
+form > input[type=submit]:hover {
     background-color: #d419198a;
     border: 2px solid #dd67ba94;
 }
-
-form a.btn{
+form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
-    width: 60%;
+    width: 100%;
     height: 40px;
-    margin: auto;
-    padding: 5px;
-    background-color: #dd67ba94;
-    color: white;
-    border: 2px solid #d419198a;
-    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #d419198a;
+    border: 1px solid #d419198a;
+    border-radius: 7px;
     text-decoration: none;
 }
-
-form a.btn:hover{
+form > a.botao:hover {
+    color: white;
     background-color: #d419198a;
-    border: 2px solid #dd67ba94;
 }
-
-#btn-e{
-    font-size: 1em;
+form > a.botao > i {
+    font-size: 0.8em;
 }
