@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
-paleta de cores
-verde: #49a09d
-lilas: #5f2c82
-*/
-
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
@@ -30,7 +24,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
@@ -39,6 +32,7 @@ section#login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
     transition: width .4s, height .4s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 div#imagem{
@@ -54,4 +48,91 @@ div#formulario{
     display: block;
     padding: 20px;
     margin: auto;
+}
+
+#titulo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#conteudo{
+    font-size: .8em;
+}
+
+.campo{
+    background-color: slateblue;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 2px solid slateblue;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo label{
+    display: none;
+}
+
+div.campo input{
+    background-color: #dd67bad0;
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    margin-left: -5px;
+    transform: translateY(-10px);
+}
+
+div.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+form input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 60%;
+    height: 40px;
+    align-items: center;
+    margin: auto;
+    background-color: #dd67ba94;
+    color: white;
+    border: 2px solid #d419198a;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+form input[type=submit]:hover{
+    background-color: #d419198a;
+    border: 2px solid #dd67ba94;
+}
+
+form a.btn{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+    background-color: #dd67ba94;
+    color: white;
+    border: 2px solid #d419198a;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form a.btn:hover{
+    background-color: #d419198a;
+    border: 2px solid #dd67ba94;
+}
+
+#btn-e{
+    font-size: 1em;
 }

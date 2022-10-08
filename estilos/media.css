@@ -14,17 +14,18 @@
 
     section#login{
         width: 80vw;
+        height: 270px;
     }
 
     div#imagem{
         float: left;
-        width: 60%;
-        height: 80%;
+        width: 40%;
+        height: 100%;
     }
 
     div#formulario{
         float: right;
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -36,6 +37,7 @@
 
     section#login{
         width: 990px;
+        height: 350px;
     }
 
     div#imagem{
